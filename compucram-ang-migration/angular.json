@@ -31,7 +31,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/gumby.css",
+              "src/assets/css/print.css"
+
             ],
             "scripts": []
           },
