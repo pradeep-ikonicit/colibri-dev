@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./forgot-tpl.component.scss']
 })
 export class ForgotTPLComponent implements OnInit {
-  
+  authError:string='';
   constructor() { }
 
   ngOnInit(): void {

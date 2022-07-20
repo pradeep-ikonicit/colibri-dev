@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { LoginTPLComponent } from './login-tpl/login-tpl.component';
 import { PasswordTPLComponent } from './password-tpl/password-tpl.component';
 import { ForgotTPLComponent } from './forgot-tpl/forgot-tpl.component';
+import { CurrentYearPipe } from '../pipe/current-year.pipe';
+import { VersionPipe } from '../pipe/version.pipe';
 
 
 
@@ -10,7 +12,9 @@ import { ForgotTPLComponent } from './forgot-tpl/forgot-tpl.component';
   declarations: [
     LoginTPLComponent,
     PasswordTPLComponent,
-    ForgotTPLComponent
+    ForgotTPLComponent,
+    CurrentYearPipe,
+    VersionPipe,
   ],
   imports: [
     CommonModule

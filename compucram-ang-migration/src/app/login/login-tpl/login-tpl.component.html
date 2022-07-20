@@ -12,7 +12,7 @@
                             ng-model="user.email" required autofocus /></div>
                     <div class="field"><input class="input" placeholder="Password" name="pass" type="password"
                             ng-model="user.password" required /></div>
-                    <div class="cc_error" ng-show="authError">{{authError}}</div>
+                    <div class="cc_error" [hidden]="!(authError.length>0)">{{authError}}</div>
                     <div class="">
                         <label class="checkbox checked" for="check1">
                             <input name="checkbox" id="check1" type="checkbox" ng-model="user.remember">
@@ -52,7 +52,7 @@
                         ng-click="goToMarketingSupportSite()">Contact
                         Customer Service</a></p>
             </div>
-            <!-- <div class="cc_login_legal">&copy; {{ '' | currentYear }} CompuCram. All Rights Reserved. {{ 'Version v%VERSION%' | version }}</div> -->
+            <div class="cc_login_legal">&copy; {{ '' | currentYear }} CompuCram. All Rights Reserved. {{ 'Version v%VERSION%' | version }}</div>
         </div>
     </div>
 </div>

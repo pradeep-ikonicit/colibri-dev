@@ -10,7 +10,7 @@
 
                     <div class="field"><input class="input" placeholder="Email Address" name="email" type="email"
                             ng-model="email" required autofocus /></div>
-                    <div class="cc_error" ng-show="authError">
+                    <div class="cc_error" [hidden]="!(authError.length>0)">
                         The email you have entered is not in the system.
                     </div>
 
@@ -24,7 +24,7 @@
                         ng-click="goToMarketingSupportSite()">Contact
                         Customer Service</a></p>
             </div>
-            <!-- <div class="cc_login_legal">&copy; {{ '' | currentYear }} CompuCram. All Rights Reserved</div> -->
+            <div class="cc_login_legal">&copy; {{ '' | currentYear }} CompuCram. All Rights Reserved</div>
         </div>
     </div>
 </div>
